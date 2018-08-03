@@ -12,3 +12,9 @@ spring:
       
     deserialization:
       accept-single-value-as-array: true
+
+management:
+  endpoints:
+    web: 
+      exposure:
+        include:*
