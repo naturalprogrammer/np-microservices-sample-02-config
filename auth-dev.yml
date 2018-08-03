@@ -1,0 +1,26 @@
+# Authorization Service Development environment
+
+spring:
+  data:
+    mongodb:
+      database: np02auth
+      
+  security:
+    oauth2:
+      client:
+        provider:
+          facebook:
+            user-info-uri: https://graph.facebook.com/me?fields=email,name,verified 
+        registration:
+          google:
+            client-id: 1011974249454-6gq0hr01gqh3cndoqnss5r69tkk2nd84.apps.googleusercontent.com
+            client-secret: saDA6Cj60wipncFM-hzBD-C6
+          facebook:
+            client-id: 1234020186718741
+            client-secret: 0c0abaf685a83e879e8e48b1167c96ab
+
+lemon:
+
+  recaptcha:
+    sitekey: 6LdwxRcUAAAAABkhOGWQXhl9FsR27D5YUJRuGzx0
+    secretkey: 6LdwxRcUAAAAADaG0Eo1qkYCco15cnngiBoBt2IO

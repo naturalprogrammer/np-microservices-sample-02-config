@@ -1,0 +1,18 @@
+server:
+  port: 9090
+
+# Spring Lemon related properties
+lemon:
+
+  # First ADMIN user
+  admin:
+    username: admin@example.com
+    password: admin!
+    
+   # Spring Lemon flags
+   # enabled:
+      # json-prefix: false
+      
+  # Properties to be passed to client
+  shared:
+    fooBar: 123...
