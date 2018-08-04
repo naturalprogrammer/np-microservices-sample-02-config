@@ -18,3 +18,20 @@ management:
     web:
       exposure:
         include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:topsecret@localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+hystrix:
+  shareSecurityContext: true
+  command.default.execution.isolation.thread.timeoutInMilliseconds: 600000 # 10 minutes
+ribbon:
+  ConnectTimeout: 300000 # 5 minutes
+  ReadTimeout: 600000 # 10 minutes
+ 
