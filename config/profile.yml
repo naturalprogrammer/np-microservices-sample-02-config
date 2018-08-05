@@ -1,0 +1,4 @@
+# Profile Service
+
+server:
+  port: 9092

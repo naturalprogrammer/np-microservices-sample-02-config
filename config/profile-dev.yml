@@ -1,0 +1,6 @@
+# Profile Service Development environment
+
+spring:
+  data:
+    mongodb:
+      database: np02profile
