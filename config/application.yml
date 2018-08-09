@@ -12,6 +12,16 @@ spring:
       
     deserialization:
       accept-single-value-as-array: true
+      
+  cloud:
+    stream:
+      bindings:
+        user-input-channel:
+          destination: user-topic
+          group: ${spring.application.name}
+        user-output-channel:
+          destination: user-topic
+          group: ${spring.application.name}
 
 management:
   endpoints:

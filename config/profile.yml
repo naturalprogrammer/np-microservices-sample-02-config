@@ -1,4 +1,4 @@
 # Profile Service
 
 server:
-  port: 9092
+  port: 8082
